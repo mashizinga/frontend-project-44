@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import { answerUser } from '../src/even.js';
-answerUser()
+import { brainEven } from '../src/games/even.js';
+brainEven()

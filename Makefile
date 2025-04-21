@@ -14,4 +14,4 @@ brain-even:
 	node bin/brain-even.js
 
 brain-calc:
-	node bin/brain-calculator.js
+	node bin/brain-calc.js

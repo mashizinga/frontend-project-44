@@ -4,3 +4,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/4fcfd64c9d8818c3a21a/maintainability)](https://codeclimate.com/github/mashizinga/frontend-project-44/maintainability)
 
 brain-even https://asciinema.org/a/xSQODeHXkkmRiMW6arc4Sa08z
+brain-calc https://asciinema.org/a/tMIdjNWDAcjZikbidFTobgQ1X
