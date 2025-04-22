@@ -12,7 +12,7 @@ export const brainCalc = () => {
        }
 
       const operators = ['+', '-', '*'];
-      const operator = operators[getRandomInt(1,3)];
+      const operator = operators[getRandomInt(1,2)];
 
       const question = `Question: ${randomNumber1} ${operator} ${randomNumber2}`;
 
