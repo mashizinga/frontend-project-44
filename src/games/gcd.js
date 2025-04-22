@@ -28,7 +28,5 @@ export const brainGcd = () => {
         return [question, correctAnswer];
 
     };
-
-
     generalLogic(questionGcd, gameGcd);
 }
