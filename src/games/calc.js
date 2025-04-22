@@ -6,18 +6,20 @@ export const brainCalc = () => {
    const gameCalc = () => {
       const randomNumber1 = Math.floor(Math.random() * 101);
       const randomNumber2 = Math.floor(Math.random() * 101);
-      const getRandomOperator = () => {
-         const operators = ['+', '-', '*'];
-         const random = operators[Math.floor(Math.random() * operators.length)];
-         return random;
-      }
-      const randomOp = getRandomOperator();
-      const question = `${randomNumber1} ${randomOp} ${randomNumber2}`;
+
+      const getRandomInt = (min, max) => {
+         return Math.floor(Math.random() * (max - min + 1)) + min;
+       }
+
+      const operators = ['+', '-', '*'];
+      const operator = operators[getRandomInt(1,3)];
+
+      const question = `${randomNumber1} ${operator} ${randomNumber2}`;
 
       let result;
-      if (randomOp === '+') {
+      if (operator === '+') {
          result = randomNumber1 + randomNumber2;
-      } else if (randomOp === '-') {
+      } else if (operator === '-') {
          result = randomNumber1 - randomNumber2;
       } else {
          result = randomNumber1 * randomNumber2;
