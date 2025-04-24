@@ -1,19 +1,13 @@
-import generalLogic from '../index.js'
+import { generalLogic, getRandomInt, isEven } from '../index.js'
 
 export const brainEven = () => {
   const questionEven = 'Answer "yes" if the number is even, otherwise answer "no".'
 
   const gameEven = () => {
-    const randomNumber = Math.floor(Math.random() * 101)
+    const randomNumber = getRandomInt(1, 100)
     const question = `Question: ${randomNumber}`
 
-    let correctAnswer = ''
-    if (randomNumber % 2 === 0) {
-      correctAnswer = 'yes'
-    }
-    else {
-      correctAnswer = 'no'
-    }
+    const correctAnswer = isEven(randomNumber) ? 'yes' : 'no'
 
     return [question, correctAnswer]
   }

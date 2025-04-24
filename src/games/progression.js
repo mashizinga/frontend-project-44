@@ -1,18 +1,14 @@
-import generalLogic from '../index.js'
+import { generalLogic, getRandomInt } from '../index.js'
 
 export const brainProgression = () => {
   const questionProgression = 'What number is missing in the progression?'
 
   const gameProgression = () => {
-    const getRandomInt = (min, max) => {
-      return Math.floor(Math.random() * (max - min + 1)) + min
-    }
-
     const randomNumb = getRandomInt(0, 9)
     const randomStep = getRandomInt(1, 9)
 
-    const randomNumbers = []
     const getRandomArray = (randomNumb, randomStep) => {
+      const randomNumbers = []
       let a = randomNumb
       for (let i = 0; i < 10; i += 1) {
         a = a + randomStep
