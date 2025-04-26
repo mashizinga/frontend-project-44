@@ -1,4 +1,9 @@
-import { generalLogic, getRandomInt, isEven } from '../index.js'
+import { generalLogic, getRandomInt } from '../index.js'
+
+export const isEven = (number) => {
+  const result = number % 2 === 0
+  return result
+}
 
 export const brainEven = () => {
   const questionEven = 'Answer "yes" if the number is even, otherwise answer "no".'
